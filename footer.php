@@ -1,0 +1,1 @@
+<p> &copy; copywright by NK 2017 </p>

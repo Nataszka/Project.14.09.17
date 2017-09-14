@@ -1,0 +1,139 @@
+﻿
+
+ /*   html, body  { background-color: red; display: table; margin: 0px; width: 100%; height: 100%; }
+            div         { background-color: #0f0; text-align: center; display: table-cell; vertical-align: middle;  }*/
+
+
+            body {
+                margin: 0;
+                background-color: #EFF6EE;
+                //background-image: url(wall.jpg)   
+            }
+
+
+
+
+
+            a.active {
+                background-color: #338BB7!important;
+            }
+
+
+/* mogło być "div#sidebar div {..." i wtedy bez "display:block". Zamieniliśmy na "a", żeby od razu móc dodać "href" */
+            div#sidebar a {
+                display: block;
+                text-align: center;
+                margin: 10px;
+                padding: 20px 3px;
+                background-color: #F02D39;
+                color: #EFF6EE;
+                text-decoration: none;
+            } 
+
+            div#sidebar a:hover {
+                background-color: #DD0426;
+                color: white;
+            }
+
+
+            div#main {
+                    width: 1000px; 
+                    background-color:#EFF6EE;
+                    margin: 0 auto;
+                    box-shadow: 0PX 0PX 50px #000;
+                    }
+
+            div#header {
+                    width: 100%;
+                    height: 300px;
+                    background-color: #EFF6EE; background-image: url(travel3.jpg); background-position: left;
+                    float: left; 
+                    display: table;
+                    
+                    }
+                       
+            div#header h1 {
+                color: #F02D3A;
+                text-shadow: 0px 0px 8px #000;
+                font-size: 60px;
+                display: table-cell;
+                vertical-align: bottom;
+                text-align: right;
+                padding-bottom: 3px; padding-right: 20px;
+                font-family: 'Shadows Into Light', cursive;
+                
+
+            }        
+            div#header p {
+                letter-spacing: 10px;
+            }
+
+            div#sidebar {
+                     width: 25%;  
+                     background-color: #EFF6EE; 
+                     float: left; 
+                     font-family: 'Archivo Narrow', sans-serif;       
+                    }
+
+            div#content {
+                     width: 75%;  
+                     background-color:  #EFF6EE;
+                     float: right; 
+                           
+                    }
+
+            div#content p {
+                text-indent: 50px;
+                font-family: 'Archivo Narrow', sans-serif;
+            }
+
+            div#content h3, ol, h2 {
+                font-family: 'Archivo Narrow', sans-serif;
+            }
+
+            div#content * {
+                    margin: 20px;
+                    text-align: justify;
+            }
+
+            div#content img.size400 {
+                width: 400px!important;
+                 
+            }
+
+            div#content img.right {
+                    width: 200px;
+                    float: right;
+                    margin-top: 0px;
+                    display: block;
+            }
+
+            div#content img.center {
+                width: 200px;
+                margin: 0px auto 20px auto; /* pierwsza wartość to góra, druga to prawa str, trecia to dół, a czwarta to lewa str */
+                display: block;
+        }
+
+            div#footer {
+                     width: 100%; 
+                     height: 100px;
+                     text-align: center; 
+                     display: table; 
+                     background-color: #273043; 
+                     clear: both;  /* dodajemy clear, żeby odciąć stopkę od powyższyć floatów */  
+                    }
+            div#footer p {
+                color: white; display: table-cell; vertical-align: middle; 
+            }
+
+            div.fixed {
+                position: fixed;
+                bottom: 0px;
+                right: 0px;
+                width: 250px;
+                border: 3px solid #DD0426;
+                background-color: #EFF6EE;
+                padding: 5px;
+                text-align: center;
+
+            }
